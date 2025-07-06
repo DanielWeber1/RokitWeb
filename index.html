@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="menu">
+      <img class="logo-img" src="images/logo.png" alt="">
+      <div class="menu-buttons">
+        <a class="menu-button" href="">Domů</a>
+        <a class="menu-button" href="">O nás</a>
+        <a class="menu-button" href="">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="container">
+      <div style="width: 48%;">
+        <h1>Hledáte spolehlivého partnera pro moderní IT řešení?</h1>
+        <p>RokIT Partner s.r.o. propojuje špičkové IT poradenství s moderním vzděláváním a bezpečnými technologiemi, které posouvají školy a firmy k efektivnější a bezpečnější budoucnosti.</p>
+        <div style="margin-top: 20px; height: 60px; display: flex; gap: 20px;">
+          <a class="navigate-button more-info" href="">Zjistit více</a>
+          <a class="navigate-button contact-us" href="">Kontaktujte nás</a>
+        </div>
+      </div>
+      <div class="slideshow-wrapper">
+        <div class="slideshow-background"></div>
+        <div class="slideshow">
+          <div class="slide active">
+            <img src="images/img1.png" alt="Slide 1">
+          </div>
+          <div class="slide">
+            <img src="images/img2.png" alt="Slide 2">
+          </div>
+          <div class="slide">
+            <img src="images/img3.png" alt="Slide 3">
+          </div>
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container cont-column">
+      <p style="text-align: center; width: 900px; font-size: 27px; color: rgb(50, 50, 50);">RokIT Partner s.r.o. propojuje špičkové IT poradenství s moderním vzděláváním a bezpečnými technologiemi, které posouvají školy a firmy k efektivnější a bezpečnější budoucnosti.</p>
+      <div style="width: 100px; height: 5px; background-color: rgb(255, 106, 0); margin-top: 30px;"></div>
+    </div>
+  </section>
+  <section>
+    <div class="container cont-column">
+      <h2>Naše služby</h2>
+      <div class="services-grid">
+        <div class="service-box">
+          <div class="icon-circle">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <h3>IT konzultace a audit</h3>
+          <p class="p-services">Analýza stávajícího stavu IT, optimalizace procesů, školení a vzdělávání pracovníků v oblasti IT.</p>
+        </div>
+        <div class="service-box">
+          <div class="icon-circle">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3>E-learning a školení</h3>
+          <p class="p-services">Tvorba interaktivních online kurzů i vedení praktických školení na míru – od digitálních dovedností po kyberbezpečnost. Vzdělávání přizpůsobené vašemu prostředí, online i osobně.</p>
+        </div>
+        <div class="service-box">
+          <div class="icon-circle">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>IT infrastruktura a technická podpora</h3>
+          <p class="p-services">Návrh, dodávka a správa školních i firemních sítí, serverů, zálohování a další technické zajištění bez starostí.</p>
+        </div>
+        <div class="service-box">
+          <div class="icon-circle">
+            <i class="fa-solid fa-circle-nodes"></i>
+          </div>
+          <h3>Správa sociálních sítí</h3>
+          <p class="p-services">Kompletní správa vašich sociálních sítí, tvorba obsahu a řízení online komunikace s klienty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container cont-column">
+      <h2>Naši klienti</h2>
+      <div class="clients-grid">
+        <div class="client-box">
+          <img class="client-img" src="images/klient1.png" alt="">
+        </div>
+        <div class="client-box">
+          <img class="client-img" src="images/klient2.png" alt="">
+        </div>
+        <div class="client-box">
+          <img class="client-img" src="images/klient3.png" alt="">
+        </div>
+        <div class="client-box">
+          <img class="client-img" src="images/kleint4.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div style="margin-top: 50px; display: flex; flex-direction: column; align-items: center;">
+      <img style="width: 170px; margin-bottom: 40px;" src="images/logo.png" alt="">
+      <p style="color: white;">IČO: 02376466</p>
+      <p style="color: white;">DIČ: CZ02376466</p>
+      <p style="color: white;">Datová schránka: uix8hf5</p>
+    </div>
+  </footer>
+
+
+  <script>
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    if (i === index) {
+      slide.classList.add('active');
+    } else {
+      slide.classList.remove('active');
+    }
+  });
+
+  dots.forEach((dot, i) => {
+    if (i === index) {
+      dot.classList.add('active');
+    } else {
+      dot.classList.remove('active');
+    }
+  });
+}
+
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % slides.length;
+  showSlide(slideIndex);
+}
+
+setInterval(nextSlide, 4000);
+
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    slideIndex = i;
+    showSlide(slideIndex);
+  });
+});
+
+// Inicializace
+showSlide(slideIndex);
+</script>
+</body>
+</html>
