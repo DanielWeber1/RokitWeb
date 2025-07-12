@@ -136,9 +136,9 @@ p {
 }
 
 .more-info:hover {
-  background-color: white;
-  color: black;
   transition: 0.3s;
+  transform: scale(1.1);
+
 }
 
 .contact-us {
@@ -147,9 +147,9 @@ p {
 }
 
 .contact-us:hover {
-  background-color: rgb(255, 106, 0);
-  color: white;
   transition: 0.3s;
+  transform: scale(1.1);
+
 }
 
 .slideshow-wrapper {
@@ -266,14 +266,15 @@ p {
   justify-content: space-between;
 }
 
-.client-box{
+.client-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
   border-radius: 15px;
-  transition: 0.3s;
+  transition: box-shadow 0.3s;
 }
 
 .client-box:hover{
@@ -285,9 +286,40 @@ p {
   width: 100px;
 }
 
+.tooltip-text {
+  position: absolute;
+  top: -70%;
+  left: 0;
+  background-color: rgba(230, 230, 230, 0.9);
+  color: #d5d5d5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  word-break: break-word; /* případně dlouhá slova zalomí */
+}
+
+.p-tooltip{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+.client-box:hover .tooltip-text {
+  opacity: 1;
+  transform: translateY(-5px); /* plynulý výjezd nahoru */
+}
 footer{
   background-color: #494949;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.p-footer{
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
