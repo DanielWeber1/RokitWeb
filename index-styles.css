@@ -107,6 +107,12 @@ h3{
   text-align: center;
 }
 
+h4{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  margin: 0;
+}
+
 p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 22px;
@@ -322,4 +328,9 @@ footer{
   font-size: 17px;
   text-decoration: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p-contacts{
+  font-size: 17px;
+  margin: 0px;
 }

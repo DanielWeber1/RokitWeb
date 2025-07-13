@@ -1,0 +1,97 @@
+.company-history {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Hlavní dlouhá vertikální čára */
+.timeline-vertical {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: #e65c00;
+  transform: translateX(-50%);
+}
+
+.about-us-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  position: relative;
+}
+
+.about-us-year-info {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  padding: 20px;
+  background: #fff;
+  position: relative;
+}
+
+.right {
+  align-items: start;
+  text-align: left;
+}
+
+.left {
+  align-items: end;
+  text-align: right;
+}
+
+.about-us-year {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23px;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.p-about-us {
+  font-size: 18px;
+}
+
+/* Ikony kalendáře */
+.timeline-icon {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e65c00;
+  border-radius: 50%;
+  padding: 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.our-team{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.member{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.member-img:hover{
+  filter: grayscale(0%);
+  transition: 0.3s;
+  transform: scale(1.2);
+}
