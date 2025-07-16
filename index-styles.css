@@ -4,9 +4,16 @@ body {
 
 nav {
   height: 80px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  border-bottom-style: solid;
+  border-color: #e3e3e3;
+  border-width: 1px;
 }
 
 .menu {
@@ -157,16 +164,17 @@ p {
   transform: scale(1.1);
 
 }
-
 .slideshow-wrapper {
   position: relative;
-  width: 600px;
+  width: 100%; /* Zabírá plnou šířku rodiče */
+  max-width: 600px; /* Maximální šířka */
+  margin: 0 auto; /* Zarovnání na střed */
 }
 
 .slideshow-background {
   position: absolute;
   width: 100%;
-  height: 93%;
+  height: 100%; /* Nově výška 100% rodiče */
   background-color: rgb(255, 106, 0);
   transform: rotate(8deg);
   border-top-left-radius: 15px;
@@ -179,8 +187,8 @@ p {
   overflow: hidden;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  aspect-ratio: 3 / 2; /* Poměr stran: šířka/výška (např. 600/400 = 3/2) */
   z-index: 1;
 }
 
@@ -188,8 +196,8 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   transition: opacity 1s ease;
 }
