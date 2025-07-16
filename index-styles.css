@@ -26,7 +26,7 @@ nav {
 }
 
 .logo-img {
-  width: 130px;
+  width: 150px;
 }
 
 .menu-buttons {
@@ -174,9 +174,9 @@ p {
 .slideshow-background {
   position: absolute;
   width: 100%;
-  height: 100%; /* Nově výška 100% rodiče */
-  background-color: rgb(255, 106, 0);
-  transform: rotate(8deg);
+  height: 90%; /* Nově výška 100% rodiče */
+  background-color: rgb(68, 68, 68);
+  transform: rotate(4deg);
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   z-index: 0;
