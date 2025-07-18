@@ -95,3 +95,14 @@
   transition: 0.3s;
   transform: scale(1.2);
 }
+
+@media (max-width: 800px) {
+  .our-team{
+    flex-direction: column;
+  }
+
+  .member-img{
+    width: 150px;
+    height: 150px;
+  }
+}

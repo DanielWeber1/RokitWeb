@@ -17,7 +17,7 @@
       <a href="index.html"><img class="logo-img" src="images/logo.png" alt=""></a>
       <div class="menu-buttons">
         <a class="menu-button" href="index.html">Domů</a>
-        <a class="menu-button" href="">O nás</a>
+        <a class="menu-button active-page" href="">O nás</a>
         <a class="menu-button" href="contacts.html">Kontakt</a>
       </div>
     </div>
@@ -25,13 +25,13 @@
 
   <!---------- ÚVODNÍ SEKCE ---------->
   <section>
-    <div class="container">
-      <div style="width: 48%; display: flex; flex-direction: column; gap: 30px;">
+    <div class="container" style="margin-top: 130px;">
+      <div class="animate-slide-in animate-delay-1" style="width: 48%; display: flex; flex-direction: column; gap: 30px;">
         <p>RokIT Partner s.r.o. je dynamická IT společnost působící od roku 2020. Věříme v sílu technologií a vzdělávání. Naším posláním je pomáhat firmám dosahovat lepších výsledků prostřednictvím digitalizace a moderních metod vzdělávání.</p>
         <p>Náš tým se skládá ze zkušených profesionálů, kteří jsou nadšení pro IT a vzdělávání. Zakládáme si na spolehlivosti, dlouhodobé spolupráci a individuálním přístupu ke každému klientovi.</p>
         <p>Chápeme, že každá firma má jedinečné potřeby a výzvy. Proto s vámi úzce spolupracujeme na vývoji řešení na míru, která dokonale odpovídají vašim cílům a vizi.</p>
       </div>
-      <div class="slideshow-wrapper">
+      <div class="slideshow-wrapper animate-slide-in animate-delay-2">
         <div class="slideshow-background"></div>
         <div class="slideshow">
           <div class="slide active">
@@ -144,15 +144,12 @@
 
   <!---------- FOOTER ---------->
   <footer style="padding-bottom: 70px;">
-    <div class="container cont-column">
+    <div class="container cont-column foot">
       <div style="margin-top: 50px; display: flex; flex-direction: column; align-items: center; width: 100%;">
         <img style="width: 170px; margin-bottom: 40px;" src="images/logo.png" alt="">
-        <p style="color: white;"><strong>IČO:</strong> 02376466</p>
-        <p style="color: white;"><strong>DIČ:</strong> CZ02376466</p>
-        <p style="color: white;"><strong>Datová schránka: </strong> uix8hf5</p>
       </div>
-      <div style="margin-top: 50px; margin-bottom: 20px; display: flex; flex-direction: row; width: 100%; justify-content: space-between;">
-        <div style="display: flex; flex-direction: column;">
+      <div class="footer-content">
+        <div class="footer-info">
           <h3 style="color: white; text-align: start;">Kontaktujte nás</h3>
           <div style="display: flex; flex-direction: row; gap: 20px;">
             <div>
@@ -168,9 +165,14 @@
             <p class="p-footer">podpora@rokit.cz</p>
             <p class="p-footer">Telefon: (+420) 777 288 206</p>
           </div>
+          <div style="margin-top: 20px;">
+            <p style="color: white;"><strong>IČO:</strong> 02376466</p>
+            <p style="color: white;"><strong>DIČ:</strong> CZ02376466</p>
+            <p style="color: white;"><strong>Datová schránka: </strong> uix8hf5</p>
+          </div>
         </div>
-        <div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.43900943382!2d15.827864976045332!3d50.209016204718836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c2b32095d752f%3A0xe70af930e6aaba4!2sRokitansk%C3%A9ho%2063%2F24%2C%20500%2003%20Hradec%20Kr%C3%A1lov%C3%A9%203!5e0!3m2!1scs!2scz!4v1752345177566!5m2!1scs!2scz" width="700" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="footer-map-container">
+          <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.43900943382!2d15.827864976045332!3d50.209016204718836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c2b32095d752f%3A0xe70af930e6aaba4!2sRokitansk%C3%A9ho%2063%2F24%2C%20500%2003%20Hradec%20Kr%C3%A1lov%C3%A9%203!5e0!3m2!1scs!2scz!4v1752345177566!5m2!1scs!2scz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
       <div style="padding-top: 30px; border-top-style: solid; border-width: 1px; border-color: gray; width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
