@@ -153,6 +153,24 @@ p {
   border-radius: 10px;
 }
 
+.navigate-button2 {
+  height: 60px;
+  width: 170px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+
+  /* Centrování vodorovně + mezery */
+  margin: 40px auto;
+}
+
 .more-info {
   background-color: rgb(255, 106, 0);
   color: white;
