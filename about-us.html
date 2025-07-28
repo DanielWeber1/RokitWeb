@@ -15,13 +15,28 @@
   <nav>
     <div class="menu">
       <a href="index.html"><img class="logo-img" src="images/logo.png" alt=""></a>
+
+      
       <div class="menu-buttons">
         <a class="menu-button" href="index.html">Domů</a>
         <a class="menu-button active-page" href="">O nás</a>
         <a class="menu-button" href="contacts.html">Kontakt</a>
       </div>
+
+      
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
     </div>
   </nav>
+
+  
+  <div class="overlay-menu" id="overlayMenu">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Domů</a>
+      <a href="">O nás</a>
+      <a href="contacts.html">Kontakt</a>
+    </div>
+  </div>
 
   <!---------- ÚVODNÍ SEKCE ---------->
   <section>
@@ -161,8 +176,6 @@
         </div>
         <div></div>
       </div>
-
-
   </section>
 
   
@@ -200,5 +213,17 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+    const overlay = document.getElementById('overlayMenu');
+    if (overlay.style.width === '100%') {
+      overlay.style.width = '0';
+    } else {
+      overlay.style.width = '100%';
+    }
+  }
+  </script>
+
 </body>
 </html>
