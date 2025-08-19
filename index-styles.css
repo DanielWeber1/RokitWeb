@@ -501,6 +501,10 @@ footer{
   animation-delay: 0.9s;
 }
 
+.social-icon{
+  width: 50px;
+  color: white;
+}
 
 
 @media (max-width: 1255px) {
